@@ -5,6 +5,9 @@ import testimonial from './testimonial'
 import service from './service'
 import contactMessage from './contact-message'
 import siteSettings from './site-settings'
+import tiktokVideo from './tiktok-video'
+import highlightCollection from './highlight-collection'
+import userPreferences from './user-preferences'
 
 export const schemaTypes = [
   blogPost,
@@ -13,5 +16,8 @@ export const schemaTypes = [
   testimonial,
   service,
   contactMessage,
-  siteSettings
+  siteSettings,
+  tiktokVideo,
+  highlightCollection,
+  userPreferences
 ]
