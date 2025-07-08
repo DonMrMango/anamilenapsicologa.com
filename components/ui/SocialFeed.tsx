@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaThList, FaTh, FaFilter, FaSortAmountDown, FaSortAmountUp } from 'react-icons/fa'
+import { FaThList, FaTh, FaFilter, FaSortAmountDown, FaSortAmountUp, FaVideo, FaHeart, FaComment } from 'react-icons/fa'
 import SocialPostCard from './SocialPostCard'
 import { Card } from './Card'
 

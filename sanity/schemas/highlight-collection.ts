@@ -99,7 +99,7 @@ export default {
     },
     prepare(selection: any) {
       const {title, media, icon} = selection
-      const iconEmoji = {
+      const iconEmoji = ({
         psychology: '🧠',
         couple: '💑',
         family: '👨‍👩‍👧‍👦',
@@ -110,7 +110,7 @@ export default {
         inspiration: '✨',
         goals: '🎯',
         growth: '🌱'
-      }[icon] || '📁'
+      } as Record<string, string>)[icon] || '📁'
       
       return {
         title: `${iconEmoji} ${title}`,

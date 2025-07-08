@@ -3,6 +3,17 @@
 import { useEffect, useRef } from 'react'
 import Script from 'next/script'
 
+declare global {
+  interface Window {
+    TikTok?: {
+      embed: {
+        load: () => void
+      }
+    }
+    onTikTokEmbedLoad?: () => void
+  }
+}
+
 interface TiktokEmbedProps {
   url: string
   caption?: string
@@ -29,13 +40,11 @@ export default function TiktokEmbed({ url, caption }: TiktokEmbedProps) {
     // This will run when the TikTok embed script loads
     const loadTikTokWidget = () => {
       if (window.TikTok && containerRef.current) {
-        // @ts-ignore
         window.TikTok.embed.load()
       }
     }
 
     // Add a global callback that TikTok can call
-    // @ts-ignore
     window.onTikTokEmbedLoad = loadTikTokWidget
 
     return () => {

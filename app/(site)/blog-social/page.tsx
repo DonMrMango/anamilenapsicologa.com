@@ -64,7 +64,7 @@ const mockHighlights = [
 const mockPosts = [
   {
     id: "1",
-    type: "post",
+    type: "post" as const,
     title: "Cómo saber cuándo es hora de ir a terapia de pareja",
     excerpt: "Muchas parejas se preguntan cuál es el momento adecuado para buscar ayuda profesional. En este artículo exploramos las señales que indican que es momento de tomar esa decisión.",
     mainImage: "/blog/terapia-pareja.jpg",
@@ -80,7 +80,7 @@ const mockPosts = [
   },
   {
     id: "2",
-    type: "video",
+    type: "video" as const,
     title: "3 ejercicios para mejorar la comunicación con tu pareja",
     tiktokUrl: "https://www.tiktok.com/@drjuliesmith/video/7263500948482206978",
     publishedAt: "2024-01-10",
@@ -93,7 +93,7 @@ const mockPosts = [
   },
   {
     id: "3",
-    type: "post",
+    type: "post" as const,
     title: "El poder transformador de las preguntas en terapia sistémica",
     excerpt: "Las preguntas circulares y reflexivas son herramientas fundamentales en la terapia sistémica. Descubre cómo una pregunta bien formulada puede abrir nuevas perspectivas.",
     mainImage: "/blog/preguntas-sistemicas.jpg",
@@ -107,7 +107,7 @@ const mockPosts = [
   },
   {
     id: "4",
-    type: "video",
+    type: "video" as const,
     title: "Técnicas de respiración para la ansiedad | Tutorial rápido",
     tiktokUrl: "https://www.tiktok.com/@drjuliesmith/video/7234663175433754922",
     publishedAt: "2024-01-05",
@@ -119,7 +119,7 @@ const mockPosts = [
   },
   {
     id: "5",
-    type: "post",
+    type: "post" as const,
     title: "Construyendo límites saludables en la familia",
     excerpt: "Los límites no son muros, son puentes que nos permiten relacionarnos de manera más sana. Aprende cómo establecer límites claros y amorosos.",
     mainImage: "/blog/limites-familia.jpg",
@@ -133,7 +133,7 @@ const mockPosts = [
   },
   {
     id: "6",
-    type: "video",
+    type: "video" as const,
     title: "¿Cómo lidiar con personas difíciles? 5 estrategias efectivas",
     tiktokUrl: "https://www.tiktok.com/@drjuliesmith/video/7183303552947512582",
     publishedAt: "2024-01-01",
